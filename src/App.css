@@ -1,0 +1,43 @@
+.app-grid {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-template-areas: "sidebar main";
+  height: 100vh;
+}
+
+/* Sidebar area */
+.sidebar-container {
+  grid-area: sidebar;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  z-index: 10;
+}
+
+/* Main area */
+.main-container {
+  grid-area: main;
+  height: 100%;
+  padding: 20px;
+  overflow-y: auto;
+  z-index: 1;
+}
+
+/* Add to your global CSS */
+.modal-enter {
+  opacity: 0;
+  transform: scale(0.95);
+}
+.modal-enter-active {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 200ms, transform 200ms;
+}
+.modal-exit {
+  opacity: 1;
+}
+.modal-exit-active {
+  opacity: 0;
+  transform: scale(0.95);
+  transition: opacity 200ms, transform 200ms;
+}

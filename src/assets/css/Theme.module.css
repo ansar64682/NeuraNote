@@ -1,0 +1,276 @@
+.lightMain {
+  background-color: #f9fafb; /* Tailwind's gray-50 equivalent */
+  color: #111827; /* gray-900 */
+  transition: all 0.3s ease;
+}
+
+.lightSidebar {
+  background: rgba(255, 255, 255, 0.75); /* glass effect */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-right: 1px solid rgba(0, 0, 0, 0.05);
+  color: #111827;
+  transition: all 0.3s ease;
+}
+
+/* === DARK MODE === */
+.darkMain {
+  background-color: #111827; /* gray-900 */
+  color: #f9fafb; /* gray-50 */
+  transition: all 0.3s ease;
+}
+
+.darkSidebar {
+  background: rgba(17, 24, 39, 0.85); /* dark glass */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-right: 1px solid rgba(255, 255, 255, 0.05);
+  color: #f9fafb;
+  transition: all 0.3s ease;
+}
+
+/* Theme.module.css */
+
+/* Notes Page - Dark Theme */
+.darkNotesPage {
+  background-color: #111827; /* gray-900 */
+  transition: all 0.3s ease;
+}
+
+.darkNotesHeader {
+  border-bottom: 1px solid #374151; /* gray-700 */
+  color: #eff0f4; /* gray-100 */
+  transition: all 0.3s ease;
+}
+
+.darkNotesSearchBar {
+  border-bottom: 1px solid #374151; /* gray-700 */
+  transition: all 0.3s ease;
+}
+
+.darkNotesInput {
+  border: 1px solid #4b5563; /* gray-600 */
+  background-color: #1f2937; /* gray-800 */
+  color: #f3f4f6; /* gray-100 */
+  transition: all 0.3s ease;
+}
+
+.darkNotesSelect {
+  border: 1px solid #4b5563; /* gray-600 */
+  background-color: #1f2937; /* gray-800 */
+  color: #f3f4f6; /* gray-100 */
+  transition: all 0.3s ease;
+}
+
+/* Theme.module.css */
+
+/* Note Card - Dark Theme */
+.darkNoteCard {
+  background-color: #1f2937; /* gray-800 */
+  transition: all 0.3s ease;
+}
+
+.darkNoteCardTitle {
+  color: #f3f4f6; /* gray-100 */
+  transition: all 0.3s ease;
+}
+
+.darkNoteCardPreview {
+  color: #d1d5db; /* gray-300 */
+}
+
+.darkNoteTagBlue {
+  background-color: #1e3a8a; /* blue-900 */
+  color: #93c5fd; /* blue-300 */
+}
+
+.darkNoteTagGreen {
+  background-color: #064e3b; /* green-900 */
+  color: #6ee7b7; /* green-300 */
+}
+
+.darkNoteActionBtn {
+  background-color: #374151; /* gray-700 */
+}
+
+.darkNoteActionBtnHover {
+  background-color: #4b5563; /* gray-600 */
+}
+
+.darkTask {
+  background-color: #111827; /* gray-900 */
+  color: #f9fafb; /* text-gray-50 */
+
+  /* Give subtle shadow for dark mode */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+}
+
+.darkTask h1 {
+  color: #f9fafb; /* Light heading in dark mode */
+}
+
+.darkTask button {
+  color: #f9fafb; /* Ensure button text is visible if not overridden */
+}
+
+.darkTaskTable {
+  background-color: #111827; /* gray-900 */
+  background-color: #111827; /* gray-900 */
+  color: #f9fafb; /* light text */
+}
+
+.darkTaskTable thead {
+  background-color: #374151; /* gray-700 */
+  color: #d1d5db; /* gray-300 */
+}
+
+.darkTaskTable tr {
+  border-color: #374151; /* gray-700 row borders */
+}
+
+.darkTaskTable tr:hover {
+  background-color: rgba(255, 255, 255, 0.05); /* subtle hover */
+}
+
+.darkTaskTable td,
+.darkTaskTable th {
+  border-color: #374151;
+}
+
+.darkTaskTable .priority-high {
+  background-color: rgba(239, 68, 68, 0.15); /* softer red */
+  color: #fca5a5; /* red-300 */
+}
+
+.darkTaskTable .priority-medium {
+  background-color: rgba(251, 191, 36, 0.15); /* softer orange */
+  color: #fcd34d; /* amber-300 */
+}
+
+.darkTaskTable .priority-low {
+  background-color: rgba(34, 197, 94, 0.15); /* softer green */
+  color: #86efac; /* green-300 */
+}
+
+/* Dark mode table row background */
+.darkTableRowBg {
+  background-color: #1f2937; /* dark slate gray */
+}
+
+/* Dark mode inputs */
+.darkInputBorder {
+  border-color: #374151; /* dark border */
+}
+.darkInputBg {
+  background-color: #111827; /* almost black background */
+}
+.darkInputText {
+  color: #e5e7eb; /* light gray text */
+}
+
+/* Dark mode checkbox size & accent */
+.darkCheckbox {
+  width: 1rem;
+  height: 1rem;
+  accent-color: #60a5fa; /* light blue accent */
+}
+
+/* Background */
+.dark-mode-bg {
+  background-color: #111827;
+}
+
+/* Text */
+.dark-mode-text {
+  color: #f3f4f6;
+}
+
+/* Borders */
+.dark-mode-border {
+  border-color: #374151;
+}
+
+/* Note Card */
+.dark-mode-note-card {
+  background-color: #1f2937;
+  border: 1px solid #374151;
+}
+
+/* Back Button */
+.dark-mode-back-btn {
+  background-color: #374151;
+  color: #f3f4f6;
+}
+.dark-mode-back-btn:hover {
+  background-color: #4b5563;
+}
+
+/* Tags */
+.dark-mode-tag {
+  background-color: #1e40af;
+  color: #dbeafe;
+}
+
+/* Edit Button */
+.dark-mode-edit-btn {
+  background-color: #3730a3;
+  color: #e0e7ff;
+}
+.dark-mode-edit-btn:hover {
+  background-color: #4338ca;
+}
+
+/* Delete Button */
+.dark-mode-delete-btn {
+  background-color: #991b1b;
+  color: #fee2e2;
+}
+.dark-mode-delete-btn:hover {
+  background-color: #b91c1c;
+}
+
+/* Light Theme */
+.lightSidebar {
+  background-color: #ffffff;
+}
+
+.lightThemeToggle {
+  color: #4b5563;
+  background-color: #f3f4f6;
+}
+
+.lightThemeToggle:hover {
+  background-color: #e5e7eb;
+}
+
+.lightActiveLink {
+  background-color: #e0e7ff;
+  color: #4f46e5;
+}
+
+.lightHoverLink:hover {
+  background-color: #f3f4f6;
+}
+
+/* Dark Theme */
+.darkSidebar {
+  background-color: #111827;
+}
+
+.darkThemeToggle {
+  color: #d1d5db;
+  background-color: #374151;
+}
+
+.darkThemeToggle:hover {
+  background-color: #4b5563;
+}
+
+.darkActiveLink {
+  background-color: #3730a3;
+  color: #a5b4fc;
+}
+
+.darkHoverLink:hover {
+  background-color: #1f2937;
+}
